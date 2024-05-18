@@ -10,11 +10,11 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <div className="  p-2 w-64 border border-lg shadow-lg   flex flex-col items-center hover:scale-[1.05] transition-all">
+    <div className="  p-2 lg:w-64 border border-lg shadow-lg lg:h-[100%] h-80 flex flex-col items-center hover:scale-[1.05] transition-all">
       <img
         src={product.image}
         alt={product.name}
-        className="w-50 h-64  mb-4 object-contain"
+        className="w-half h-64  mb-4 object-contain"
       />
       <div className="flex flex-row justify-between">
         <div className="flex flex-col">
@@ -41,3 +41,6 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
+
+
+

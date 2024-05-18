@@ -1,6 +1,4 @@
-
 import React from "react";
-
 import CheckboxGroup from "./CheckBoxGroup";
 
 const Sidebar = () => {
@@ -44,14 +42,16 @@ const Sidebar = () => {
         { label: "Wool", value: "wool" },
         { label: "Synthetic", value: "synthetic" },
       ],
-    }, {
+    },
+    {
       title: "RAW MATERIAL",
       options: [
         { label: "Cotton", value: "cotton" },
         { label: "Wool", value: "wool" },
         { label: "Synthetic", value: "synthetic" },
       ],
-    }, {
+    },
+    {
       title: "PATTERN",
       options: [
         { label: "Cotton", value: "cotton" },
@@ -62,8 +62,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="p-5 bg-white  shadow-none font-thin divide-y  ">
-
+    <div className="p-2 bg-white shadow-none font-thin divide-y">
       {groups.map((group) => (
         <CheckboxGroup key={group.title} title={group.title} options={group.options} />
       ))}

@@ -33,7 +33,7 @@ const CheckBoxGroup = ({ title, options }) => {
   };
 
   return (
-    <div className="relative mt-2 w-52 ">
+    <div className="relative mt-2  ">
       <div
         className="flex items-center justify-between cursor-pointer font-medium text-sm mt-1"
         onClick={toggleDropdown}
@@ -41,9 +41,9 @@ const CheckBoxGroup = ({ title, options }) => {
         <span className="text-black text-lg">{title}</span>
         <span>
           {dropdownOpen ? (
-            <FaChevronUp className="text-black ml-10" />
+            <FaChevronUp className="text-black " />
           ) : (
-            <FaChevronDown className="text-black ml-10" />
+            <FaChevronDown className="text-black" />
           )}
         </span>
       </div>

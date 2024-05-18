@@ -21,24 +21,23 @@ const Navigation = () => {
   };
 
   return (
-    <div className="container mx-auto">
-      <header className="flex justify-around items-center py-4">
-        
-        <nav className="flex space-x-8">
-          {['SHOP', 'SKILLS', 'STORIES', 'ABOUT', 'CONTACT'].map((a) => (
+    <div className="container mx-auto px-4 sm:px-8">
+      <header className="flex flex-wrap justify-around items-center py-4">
+        <nav className="flex space-x-4 sm:space-x-8">
+          {['SHOP', 'SKILLS', 'STORIES', 'ABOUT', 'CONTACT'].map((tab) => (
             <button
-              key={a}
-              className={`text-lg font-semibold ${
-                activeTab === a ? 'text-black' : 'text-gray-500'
+              key={tab}
+              className={`text-sm sm:text-lg font-semibold ${
+                activeTab === tab ? 'text-black' : 'text-gray-500'
               }`}
-              onClick={() => setActiveTab(a)}
+              onClick={() => setActiveTab(tab)}
             >
-              {a}
+              {tab}
             </button>
           ))}
         </nav>
       </header>
-      <main className=" text-black">
+      <main className="mt-4 text-black">
         {renderContent()}
       </main>
     </div>
