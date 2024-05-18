@@ -52,7 +52,7 @@ const ProductList = () => {
   return (
     <div className="font-[sans-serif]">
       <div className="p-2 w-full max-w-screen-xl mx-auto bg-white">
-        <div className=" container mx-auto p-4 grid gap-2 md:gap-16 lg:gap-24 grid-cols-2 md:grid-flow-row lg:grid-cols-3  lg:grid-flow-row lg:px-20">
+        <div className=" container mx-auto p-4 grid gap-2 md:gap-16 lg:gap-24 grid-cols-3 md:grid-flow-row lg:grid-cols-3  lg:grid-flow-row lg:px-20">
           {products.map((product, index) => (
             <ProductCard key={index} product={product} />
           ))}
